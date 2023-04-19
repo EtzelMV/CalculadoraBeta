@@ -1,49 +1,71 @@
-/**********************************************
-**                DEFICIONES                 **
-**********************************************/
-const num1 = document.getElementById('numero1');
-const num2 = document.getElementById('numero2');
-const resultado = document.getElementById('resultado');
-
-/**********************************************
-**                 FUNCIONES                 **
-**********************************************/
-function limpiarEntradaUser() {
-  const num1Limpio = num1.value.trim();
-  const num2Limpio = num2.value.trim();
-  
-  // clausula de guarda (guard clause)
-  if (num1Limpio === '' || num2Limpio === '') return;
-
-  const num1Number = Number(num1Limpio)
-  const num2Number = Number(num2Limpio)
-
-  return [num1Number, num2Number];
-}
-
-function mostrarResultado(result) {
-  resultado.textContent = result;
-}
-
-
 function sumar() {
-  const numeros = limpiarEntradaUser();
-  mostrarResultado(numeros[0] + numeros[1]);
+  // Obtener los valores de los inputs
+  const num1 = parseFloat(document.getElementById("numero1").value);
+  const num2 = parseFloat(document.getElementById("numero2").value);
+
+  // Calcular la suma
+  const resultado = num1 + num2;
+
+  // Mostrar el resultado en una alerta
+  /*alert("Resultado de sumar " + num1 + " + " + num2 + " = " + resultado);*/
+
+  // Mostrar resultado en el div de resultado
+  const total = document.getElementById('total');
+  total.innerHTML = ` ${num1} + ${num2} = ${resultado}`;
 }
+
 function restar() {
-  const numeros = limpiarEntradaUser();
-  mostrarResultado(numeros[0] - numeros[1]);
+  // Obtener los valores de los inputs
+  const num1 = parseFloat(document.getElementById("numero1").value);
+  const num2 = parseFloat(document.getElementById("numero2").value);
+
+  // Calcular la resta
+  const resultado = num1 - num2;
+
+  // Mostrar el resultado en una alerta
+  /*alert("Resultado de restar " + num1 + " - " + num2 + " = " + resultado);*/
+
+  // Mostrar resultado en el div de resultado
+  const total = document.getElementById('total');
+  total.innerHTML = ` ${num1} - ${num2} = ${resultado}`;
 }
+
 function multiplicar() {
-  const numeros = limpiarEntradaUser();
-  mostrarResultado(numeros[0] * numeros[1]);
+  // Obtener los valores de los inputs
+  const num1 = parseFloat(document.getElementById("numero1").value);
+  const num2 = parseFloat(document.getElementById("numero2").value);
+
+  // Calcular la multiplicación
+  const resultado = num1 * num2;
+
+  // Mostrar el resultado en una alerta
+  /*alert("Resultado de multiplicar " + num1 + " * " + num2 + " = " + resultado);*/
+
+  // Mostrar resultado en el div de resultado
+  const total = document.getElementById('total');
+  total.innerHTML = ` ${num1} * ${num2} = ${resultado}`;
 }
+
 function dividir() {
-  const numeros = limpiarEntradaUser();
-  if (numeros[1] === 0) {
-    mostrarResultado('ERROR');
-  } else {
-    mostrarResultado(numeros[0] / numeros[1]);
-  }
+  // Obtener los valores de los inputs
+  const num1 = parseFloat(document.getElementById("numero1").value);
+  const num2 = parseFloat(document.getElementById("numero2").value);
+
+  // Calcular la división
+  const resultado = num1 / num2;
+
+  // Mostrar el resultado en una alerta
+  /*alert("Resultado de dividir " + num1 + " / " + num2 + " = " + resultado);*/
+
+  // Mostrar resultado en el div de resultado
+  const total = document.getElementById('total');
+  total.innerHTML = `${num1} / ${num2} = ${resultado}`;
 }
- 
+
+// APLICAR JQUERY
+$(".btn-info").hover(function(){
+  $(this).css({"background-color": "green", "color": "black"});
+  }
+  , function(){
+  $(this).css("background-color", "#0dcaf0");
+});

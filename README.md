@@ -8,4 +8,4 @@ Calculadora hermosa que se hace con lo aprendido hasta ahora.
 * Rosa Nuñez [Github](https://github.com/Rouseandrea)
 * Ismael Vidal [Github](https://github.com/IsmaelVidalBasare)
 * Carlos Pizarro [Github](https://github.com/CarlosPizarroMorales)
-* María Jesus Oliva [Github](https://github.com/)
+* María Jesus Oliva [Github](https://github.com/mjoliva)

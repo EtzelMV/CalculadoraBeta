@@ -16,11 +16,10 @@
   
     <section id="resultadoContainer" class="mx-auto">
       <h1 class="display-6 text-light text-center w-100">Resultado</h1>
-      <div class="bg-light p-5 w-100" id="resultado"></div>
+      <div class="bg-light fs-3 p-5 w-100" id="total"></div>
     </section>  
   
   <form>
-
     <div class="row">
       <div class="col-6 mb-3">
         <label for="numero1" class="form-label text-light">Número 1</label>
@@ -28,21 +27,21 @@
       </div>
       <div class="col-6 mb-3">
         <label for="numero2" class="form-label text-light">Número 2</label>
-        <input type="number" class="form-control" id="numero2" required>
+        <input type="number" class="form-control" id="numero2">
       </div>
     </div>
     
     <div class="row mb-5">
-      <button type="button" class="col mx-5 btn btn-primary" id="sum" onclick="sumar()">Sumar</button>
-      <button type="button" class="col mx-5 btn btn-primary" id="res" onclick="restar()">Restar</button>
-      <button type="button" class="col mx-5 btn btn-primary" id="mul" onclick="multiplicar()">Multiplicar</button>
-      <button type="button" class="col mx-5 btn btn-primary" id="div" onclick="dividir()">Didivir</button>
+      <button type="button" class="col mx-5 btn btn-info" id="sum" onclick="sumar()">Sumar</button>
+      <button type="button" class="col mx-5 btn btn-info" id="res" onclick="restar()">Restar</button>
+      <button type="button" class="col mx-5 btn btn-info" id="mul" onclick="multiplicar()">Multiplicar</button>
+      <button type="button" class="col mx-5 btn btn-info" id="div" onclick="dividir()">Didivir</button>
     </div>
-  
-  </form>
+  </form> 
   
   <!--* MVP : Minimum Viable Product -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
   <script src="./script.js"></script>
 </body>
 </html>
