@@ -1,0 +1,3 @@
+#resultadoContainer {
+  width: clamp(300px, 90vw, 800px)!important;
+}
