@@ -13,3 +13,7 @@ body {
   border: 10px groove white;
   border-radius: 5px;
 }
+
+input:focus {
+  border: 5px solid rgb(17, 203, 241, 1);
+}
