@@ -1,5 +1,5 @@
 # Sprint módulo 2: Calculadora
-Calculadora hermosa que se hace con lo aprendido hasta ahora. 
+Ejercicio de implementación de calculadora modelo standard. 
 
 
 # Integrantes: 

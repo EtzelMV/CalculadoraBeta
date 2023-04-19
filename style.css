@@ -1,3 +1,15 @@
-#resultadoContainer {
+body {
   width: clamp(300px, 90vw, 500px)!important;
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    width: 200px !important;
+  }
+}
+
+#total {
+  background-color: rgb(17, 203, 241, 1) !important;
+  border: 10px groove white;
+  border-radius: 5px;
 }
